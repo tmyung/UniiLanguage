@@ -14,7 +14,9 @@ export default function App() {
             </h1>
 
             <div>
-
+                <button class="get_started">
+                    Get Started!
+                </button>
             </div>
         </>
     );

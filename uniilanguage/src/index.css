@@ -8,3 +8,18 @@ h1.logo {
     width: 100%;
     font-size: 48pt;
 }
+
+button.get_started {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    
+}
+
+button.get_started:hover {
+    background-color: green;
+    color: white;
+}
