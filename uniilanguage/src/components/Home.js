@@ -1,8 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function App() {
+import './Home.css';
+
+const Home = () => {
     return (
         <>
             <h1 class="logo">
@@ -21,3 +22,5 @@ export default function App() {
         </>
     );
 }
+
+export default Home;
