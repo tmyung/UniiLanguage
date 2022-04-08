@@ -1,12 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import './Home.css';
+import '../index.css';
 
 const Home = () => {
+
+    let nav = useNavigate();
+    function navigate() {
+        nav('h2p');
+    }
+
     return (
         <>
-            <h1 class="logo">
+            <h1 className="logo">
                 <span style={{color: "red"}}>U</span>
                 <span style={{color: "yellow"}}>n</span>
                 <span style={{color: "green"}}>i</span>
@@ -15,7 +21,7 @@ const Home = () => {
             </h1>
 
             <div>
-                <button class="get_started">
+                <button className="get_started" onClick={navigate}>
                     Get Started!
                 </button>
             </div>
