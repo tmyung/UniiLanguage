@@ -7,7 +7,7 @@ const Home = () => {
 
     let nav = useNavigate();
     function navigate() {
-        nav('h2p');
+        nav('/h2p');
     }
 
     return (

@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 import '../index.css';
 
-const H2p = () => {
+const H2p2 = () => {
 
     let nav = useNavigate();
     function navigate() {
-        nav('/h2p2');
+        nav('/end');
     }
 
     return(
@@ -17,14 +17,14 @@ const H2p = () => {
                     How to Play
                 </h1>
                 <p>
-                    You will see a silly sentence in the next slide. <br></br>
-                    Then you will draw that sentence <br></br>
-                    3 times
+                    You will have 10 seconds, 30 seconds, and 1 <br></br>
+                    minutes to draw a picture of the words in the <br></br>
+                    silly sentence.
                 </p>
-                <button onClick={navigate}>Next</button>
+                <button onClick={navigate}>Let's Draw</button>
             </div>
         </>
     );
 }
 
-export default H2p;
+export default H2p2;
