@@ -15,16 +15,17 @@
                 <script src='../prompt generation/prek3.js'></script>
                 <script>document.write(generatePrompt(prek3))</script>
             </div>
-            <img src="../images/timer gifs/timer10.gif"">
+            <img src="../images/timer gifs/timer10.gif">
         </div>
         <canvas id="canvas" style="border:1px solid"></canvas>
 		<span class="blackbg" id="myPopupBlackBg"></span>
 		<span class="popupbg" id="myPopupBg"></span>
 		<span class="popup0">
-			<button class="popuptext" id="myPopup0">Great Job!</button>
-		</span>
-		<span class="popup01">
-			<button class="popuptext" id="myPopup01">You will have 30 seconds to draw it again next round.</button>
+			<p class="popuptext" id="myPopup0">Great Job!<br><br>
+			<span style="color: #676767;font-family: 'Open Sans';font-style: normal;font-weight: 700;font-size: 24px;line-height: 22px">
+			You will have 30 seconds to draw it again next round.
+			</span>
+			</p>
 		</span>
 		<span class="popup1" onclick="location.href='../src/Drawing_30_sec.html?prompt=' + previous">
 			<button class="popuptext" id="myPopup1">Next Round!</button>

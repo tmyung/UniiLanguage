@@ -267,7 +267,7 @@ div.endScreen img {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -600%);
+	transform: translate(-50%, -250%);
 	display: inline-block;
 	cursor: pointer;
 }
@@ -275,7 +275,7 @@ div.endScreen img {
 .popup0 .popuptext {
   flex-direction: row;
   align-items: center;
-  padding: 0px 100px;
+  padding: 0px 0px;
   gap: 10px;
 
   font-family: 'Open Sans';
