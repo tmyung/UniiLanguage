@@ -31,14 +31,13 @@ function draw(e){
     }
     canvas.beginPath();
     canvas.lineCap = "round"
+	canvas.strokeStyle = localStorage.getItem('color')
     canvas.lineWidth = 5
     canvas.moveTo(mousePos.x, mousePos.y)
     mousePosition(e)
     canvas.lineTo(mousePos.x, mousePos.y)
     canvas.stroke()
 }
-
-canvas.strokeStyle = localStorage.getItem('color')
 
 function onSave(){
     canvas2.toBlob((blob) => {

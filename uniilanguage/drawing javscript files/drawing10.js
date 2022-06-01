@@ -32,6 +32,7 @@ function draw(e){
     }
 	canvas.beginPath();
 	canvas.lineCap = "round"
+	canvas.strokeStyle = pen_color;
 	canvas.lineWidth = 5
 	canvas.moveTo(mousePos.x, mousePos.y)
 	mousePosition(e)
@@ -40,7 +41,6 @@ function draw(e){
 }
 
 var pen_color = randomColor();
-canvas.strokeStyle = pen_color;
 
 function randomColor(){
     var colors = ["#3B99F2", "#5EAE66", "#5F45C9"]

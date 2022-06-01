@@ -251,7 +251,7 @@ div.endScreen img {
 
 .popupbg {
 	visibility: hidden;
-	background-image:url('./images/round_2_popup.svg');
+	background-image:url('./images/new_popup.svg');
 	background-repeat:no-repeat;
 	position: fixed;
 	top: -5%;
