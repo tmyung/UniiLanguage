@@ -56,8 +56,10 @@ function onSave(){
 function timerFunction(){
     timer--;
     if (timer ==0){
-		var popup = document.getElementById("myPopup");
-		popup.style.visibility = "Visible";
+		var popup1 = document.getElementById("myPopup1");
+		popup1.style.visibility = "Visible";
+		var popup2 = document.getElementById("myPopup2");
+		popup2.style.visibility = "Visible";
 		window.removeEventListener("mousemove", draw)
         //if (window.confirm("Would you like to save the painting?")){
         //    onSave()

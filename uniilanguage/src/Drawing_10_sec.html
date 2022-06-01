@@ -17,10 +17,13 @@
             </div>
             <img src="../images/timer gifs/10timer.gif">
         </div>
-			<div class="popup">
-				<p class="popuptext" onclick="location.href='../src/Drawing_30_sec.html?prompt=' + previous" id="myPopup">Click Here to Continue!</p>
-			</div>
         <canvas id="canvas" style="border:1px solid"></canvas>
+		<span class="popup1" onclick="location.href='../src/Drawing_30_sec.html?prompt=' + previous">
+			<button class="popuptext" id="myPopup1">Next Round!</button>
+		</span>
+		<span class="popup2" onclick="onSave()">
+			<button class="popuptext" id="myPopup2">Save Drawing</button>
+		</span>
         <br>
         <button hidden="hidden" id="save">Save Drawing</button>
         <script src="../drawing javscript files/drawing10.js"></script>

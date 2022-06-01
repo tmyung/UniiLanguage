@@ -55,15 +55,17 @@ function onSave(){
 function timerFunction(){
     timer--;
     if (timer ==0){
+		var popup1 = document.getElementById("myPopup1");
+		popup1.style.visibility = "Visible";
+		var popup2 = document.getElementById("myPopup2");
+		popup2.style.visibility = "Visible";
 		window.removeEventListener("mousemove", draw)
-        if (window.confirm("Would you like to save the painting?")){
-            onSave()
-            window.location.href = "../src/End_screen.html";
-        }
-        else{
-            window.location.href = "../src/End_screen.html";
-        }
-        
+        //if (window.confirm("Would you like to save the painting?")){
+        //    onSave()
+        //}
+        //if (window.confirm("Ready to move onto the 30 second round?")){
+        //    window.location.href = "../src/Drawing_30_sec.html?prompt=" + previous;
+        //}
     }
 }
 
