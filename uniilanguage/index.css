@@ -251,12 +251,23 @@ div.endScreen img {
     margin-top: 10%;
 }
 
+.blackbg {
+	visibility: hidden;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	background-image: url('./images/backgrounds/black_bg.svg');
+	background-repeat: repeat;
+}
+
 .popupbg {
 	visibility: hidden;
 	background-image:url('./images/round_2_popup.svg');
 	background-repeat:no-repeat;
 	position: fixed;
-	top: 0%;
+	top: -5%;
 	left: 19%;
 	height: 100%;
 	width: 100%;
