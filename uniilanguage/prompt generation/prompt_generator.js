@@ -3,7 +3,7 @@ let previous = "";
 function getPassedPrompt() {
 	var params = getParams();
 	var passedPrompt = params["prompt"];
-	return params["prompt"];
+	return passedPrompt;
 }
 
 function getParams() {
