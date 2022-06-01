@@ -33,13 +33,22 @@ function draw(e){
     }
     canvas.beginPath();
     canvas.lineCap = "round"
-    canvas.strokeStyle = "#111"
     canvas.lineWidth = 5
     canvas.moveTo(mousePos.x, mousePos.y)
     mousePosition(e)
     canvas.lineTo(mousePos.x, mousePos.y)
     canvas.stroke()
 }
+var pen_color = randomColor();
+canvas.strokeStyle = pen_color;
+
+function randomColor(){
+    var colors = ["#3B99F2", "#5EAE66", "#5F45C9"]
+    var color = colors[Math.floor(Math.random()*colors.length)];
+    localStorage.setItem('color', color)
+    return color
+}
+
 
 function onSave(){
     canvas2.toBlob((blob) => {
