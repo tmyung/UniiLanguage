@@ -17,11 +17,11 @@ div.drawingSquare {
     width: 1100px;
     height: 700px;
     top: 0px;
-    left: 0px;
+    left: 20%;
     right: 0px;
     bottom: 100px;
     margin-top: 5%;
-    margin-left: 21%;
+    margin-left: 0%;
     background: #ffffff;
     box-shadow: 10px 17px 0px #E3E3E3;
     border-radius: 30px;
@@ -70,7 +70,7 @@ div.h2pSquare {
 
 div.h2pSquare h1{
     position: absolute;
-    width: 365px;
+    width: 50%;
     height: 83px;
     left: 30%;
     top: 30%;
@@ -86,7 +86,7 @@ div.h2pSquare h1{
 
 div.h2pSquare p{
     position: absolute;
-    width: 685px;
+    width: 75%;
     height: 126px;
     left:15%;
     top: 45%;
@@ -139,17 +139,6 @@ img.character1 {
     width: 30%;
 }
  /* ------ Home Screen -- */
-h1.logo {
-    left: 0%;
-    line-height: 200px;
-    margin-top: -100px;
-    position: absolute;
-    text-align: center;
-    top: 40%;
-    width: 100%;
-    font-size: 48pt;
-    font-family: 'Open Sans';
-}
 
 p.intro {
     position: absolute;
@@ -173,11 +162,9 @@ p.intro {
 }
 
 img.logo {
-    display: block;
-    margin-top: 17%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 35%;
 }
 
 /* -------- End Screen -----------*/
