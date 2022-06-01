@@ -262,6 +262,67 @@ div.endScreen img {
 	transform: scale(0.75);
 }
 
+.popup0 {
+    visibility: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -600%);
+	display: inline-block;
+	cursor: pointer;
+}
+
+.popup0 .popuptext {
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 100px;
+  gap: 10px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 22px;
+
+  background: #ffffff;
+  border: 0mm;
+
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+.popup01 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -550%);
+	display: inline-block;
+	cursor: pointer;
+}
+
+.popup01 .popuptext {
+  visibility: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px;
+  gap: 10px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+
+  color: #676767;
+  background: #ffffff;
+  border: 0mm;
+
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
 .popup1 {
   visibility: hidden;
   position: fixed;

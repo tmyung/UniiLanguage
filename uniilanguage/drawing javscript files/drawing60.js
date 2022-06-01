@@ -55,6 +55,8 @@ function onSave(){
 function timerFunction(){
     timer--;
     if (timer ==0){
+		var popup0 = document.getElementById("myPopup0");
+		popup0.style.visibility = "Visible";
 		var blackbg = document.getElementById("myPopupBlackBg");
 		blackbg.style.visibility = "Visible";
 		var popupbg = document.getElementById("myPopupBg");
