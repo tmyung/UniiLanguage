@@ -57,7 +57,7 @@ function timerFunction(){
     if (timer ==0){
         if (window.confirm("Would you like to save the painting?")){
             onSave()
-            window.location.href = "final.html";
+            window.location.href = "../src/End_screen.html";
         }
         else{
             window.location.href = "../src/End_screen.html";
