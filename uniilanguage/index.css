@@ -1,6 +1,6 @@
 /* -------- Backgrounds ------------*/
 body {
-    background-image:url('./images/backgrounds/background3.gif'); background-repeat: repeat;
+    background-image:url('./images/backgrounds/background3.gif'); animation-direction: alternate; background-repeat: repeat;
 }
 
 body.drawing1 {
