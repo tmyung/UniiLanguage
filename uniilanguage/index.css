@@ -252,7 +252,10 @@ div.endScreen img {
 }
 
 .popup {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: inline-block;
   cursor: pointer;
   -webkit-user-select: none;
@@ -262,15 +265,18 @@ div.endScreen img {
 }
 
 .popup .popuptext {
-  width: 160px;
+  font-weight: 500;
+  font-size: 48px;
+  padding: 10px 20px;
+  width: 50%;
+  height: 50%;
   background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 8px 0;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  bottom: 125%;
+  bottom: 50%;
   left: 50%;
-  margin-left: -80px;
 }
