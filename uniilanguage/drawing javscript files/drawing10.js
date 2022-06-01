@@ -15,7 +15,6 @@ window.addEventListener("mousemove", draw)
 window.addEventListener("mousedown", mousePosition)
 window.addEventListener("mouseenter", mousePosition)
 
-
 function mousePosition(e){
     mousePos.x = e.offsetX;
     mousePos.y = e.offsetY;
@@ -31,14 +30,14 @@ function draw(e){
     if (e.buttons !=1){
         return;
     }
-    canvas.beginPath();
-    canvas.lineCap = "round"
-    canvas.strokeStyle = "#111"
-    canvas.lineWidth = 5
-    canvas.moveTo(mousePos.x, mousePos.y)
-    mousePosition(e)
-    canvas.lineTo(mousePos.x, mousePos.y)
-    canvas.stroke()
+	canvas.beginPath();
+	canvas.lineCap = "round"
+	canvas.strokeStyle = "#111"
+	canvas.lineWidth = 5
+	canvas.moveTo(mousePos.x, mousePos.y)
+	mousePosition(e)
+	canvas.lineTo(mousePos.x, mousePos.y)
+	canvas.stroke()
 }
 
 function onSave(){
@@ -57,6 +56,9 @@ function onSave(){
 function timerFunction(){
     timer--;
     if (timer ==0){
+		//var popup = document.getElementById("myPopup");
+		//popup.style.visibility = "Visible";
+		window.removeEventListener("mousemove", draw)
         if (window.confirm("Would you like to save the painting?")){
             onSave()
         }

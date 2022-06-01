@@ -55,6 +55,7 @@ function onSave(){
 function timerFunction(){
     timer--;
     if (timer ==0){
+		window.removeEventListener("mousemove", draw)
         if (window.confirm("Would you like to save the painting?")){
             onSave()
         }
