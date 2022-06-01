@@ -53,7 +53,7 @@ function onSave(){
         new_element.remove()
     })
 }
-/*
+
 function timerFunction(){
     timer--;
     if (timer ==0){
@@ -69,4 +69,3 @@ function timerFunction(){
 document.querySelector("#save").addEventListener('click', onSave)
 
 setInterval(timerFunction, 1000)
-*/
