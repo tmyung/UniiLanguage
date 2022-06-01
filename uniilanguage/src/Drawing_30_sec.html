@@ -2,21 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="../index.css">
-        <title>10 Second Drawing</title>
+        <title>30 Second Drawing</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"
             http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
     </head>
 
-    <body class = "drawing2" style="background-color:#EEEAFF;">
-        <div class="drawingSquare"></div>
-        <img src="../images/timer gifs/30timer.gif">
+    <body class = "drawing2" style="background-color:#EBF5FF;">
+        <div class="drawingSquare">
+            <h1> Draw: </h1>
+            <div class="prompt">
+                <script src='../prompt generation/prompt_generator.js'></script>
+                <script src='../prompt generation/prek3.js'></script>
+                <script>document.write(generatePrompt(prek3))</script>
+            </div>
+            <img src="../images/timer gifs/30timer.gif">
+        </div>
         <canvas id="canvas" style="border:1px solid"></canvas>
         <br>
         <button hidden="hidden" id="save">Save Drawing</button>
         <script src="../drawing javscript files/drawing30.js"></script>
     </body>
-
-    <a href="Drawing_60_sec.html">
-        <button>sample (to 60)</button>
-    </a>
 </html>

@@ -2,8 +2,7 @@ const canvas2 = document.getElementById("canvas")
 const canvas = canvas2.getContext('2d');
 var timer = 60
 
-canvas2.style = "position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; border:2px solid black";
-
+canvas2.style = "position: absolute; top: 25%; left: 24%; right: 0px; bottom: 0px; margin: 0px; border:2px solid black";
 window.addEventListener("resize", resize)
 resize()
 let mousePos = {

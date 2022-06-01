@@ -2,7 +2,7 @@ const canvas2 = document.getElementById("canvas")
 const canvas = canvas2.getContext('2d');
 var timer = 10
 
-canvas2.style = "position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; border:2px solid black";
+canvas2.style = "position: absolute; top: 25%; left: 24%; right: 0px; bottom: 0px; margin: 0px; border:2px solid black";
 
 window.addEventListener("resize", resize)
 resize()
@@ -53,7 +53,7 @@ function onSave(){
         new_element.remove()
     })
 }
-
+/*
 function timerFunction(){
     timer--;
     if (timer ==0){
@@ -69,3 +69,4 @@ function timerFunction(){
 document.querySelector("#save").addEventListener('click', onSave)
 
 setInterval(timerFunction, 1000)
+*/
