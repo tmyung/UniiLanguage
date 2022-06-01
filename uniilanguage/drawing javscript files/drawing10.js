@@ -2,7 +2,7 @@ const canvas2 = document.getElementById("canvas")
 const canvas = canvas2.getContext('2d');
 var timer = 10
 
-canvas2.style = "position: absolute; top: 25%; left: 24%; right: 0px; bottom: 0px; margin: 0px; border:2px solid black";
+canvas2.style = "position: absolute; top: 25%; left: 24%; right: 0px; bottom: 0px; margin: 0px; border: 5px solid rgba(0, 0, 0, 0.2); border-radius: 30px;";
 
 window.addEventListener("resize", resize)
 resize()
