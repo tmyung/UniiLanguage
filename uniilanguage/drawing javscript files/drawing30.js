@@ -59,7 +59,7 @@ function timerFunction(){
             onSave()
         }
         if (window.confirm("Ready to move onto the 60 second round?")){
-            window.location.href = "../src/Drawing_60_sec.html";
+            window.location.href = "../src/Drawing_60_sec.html?prompt=" + getPassedPrompt();
         }
     }
 }

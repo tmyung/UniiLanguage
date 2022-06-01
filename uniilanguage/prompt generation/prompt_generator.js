@@ -1,3 +1,22 @@
+let previous = "";
+
+function getPassedPrompt() {
+	var params = getParams();
+	var passedPrompt = params["prompt"];
+	console.log(passedPrompt);
+	return params["prompt"];
+}
+
+function getParams() {
+	var params = {},
+		pairs = decodeURI(document.URL).split('?').pop().split('&');
+	for( var f=0, p; f<pairs.length; f++ ) {
+		p = pairs[f].split('=');
+		params[p[0]] = p[1];
+	}
+	return params;
+}
+
 async function alertTest() {
 	alert(prek3);
 }
@@ -23,6 +42,7 @@ function generatePrompt(promptset) {
 		let substitution = resolveFormat(placeholder, promptset);
 		resolved = resolved.concat(substitution);
 	}
+	previous = resolved;
 	return resolved;
 }
 

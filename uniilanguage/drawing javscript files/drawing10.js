@@ -61,7 +61,7 @@ function timerFunction(){
             onSave()
         }
         if (window.confirm("Ready to move onto the 30 second round?")){
-            window.location.href = "../src/Drawing_30_sec.html";
+            window.location.href = "../src/Drawing_30_sec.html?prompt=" + previous;
         }
     }
 }
